@@ -1,0 +1,79 @@
+.base-style (@border:4px,@border-style:double,@margin-top:10px,@margin-right:7px,@background:white,@radius:10px){
+    border: @border @border-style black;
+    margin: @margin-top @margin-right;
+    text-align: center;
+    background:@background;
+    border-radius: @radius;
+}
+
+.all-bus-sign {
+    width: 500px;
+    .base-style(7px,double,20px,auto,#f5f5f5);
+    .station-name {
+        width: 70%;
+        .base-style(4px,double,10px,auto,#d80000);
+    };
+    .bus-sign {
+        background:white;
+        .base-style;
+        .bus-number{
+        	display:inline-block;
+        	width:130px;
+        	height:100px;
+        	line-height:100px;
+        	float:left;
+        	color:#fff;
+        	.base-style(.5px,solid,15px,5px,red);
+        	h1{
+        		margin:0;
+        	};
+        };
+        .bus-message{
+        	display:inline-block;
+        	width:324px;
+        	float:left;
+        	.base-style(.5px,solid,15px,5px,#93dc93);
+        	.bus-line{
+        		height:50px;
+        		p{
+        			display:inline-block;
+        			font-size:15px;
+        		};
+        		span{
+        			display:inline-block;
+        			&.arrows-1{
+        				height:5px;
+        				width:50px;
+        				margin-right:-10px;
+        				background:#00F;
+        			};
+        			&.arrows-2{
+	        			border-left:10px solid #00F; 
+						border-right:10px solid transparent; 
+						border-top:10px solid transparent; 
+						width:0; 
+						height:0;         			
+        			};
+        		};
+        	};
+        };
+        .bus-station{
+        	.base-style(.5px,solid,15px,5px,#93dc93,0);
+        	overflow:hidden;
+        	span{
+        		display:inline-block;
+        		float:left;
+        		width:15px;
+        		margin:auto 15px;	
+        	};
+        	.nowStation{
+        		color:red;
+        		font-size:18px;
+        		font-weight:bold;
+        	};
+        };
+    };
+    .bus-company{
+        margin:20px auto;
+    };
+}

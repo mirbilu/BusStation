@@ -1,0 +1,94 @@
+.all-bus-sign {
+  width: 500px;
+  border: 7px double black;
+  margin: 20px auto;
+  text-align: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+.all-bus-sign .station-name {
+  width: 70%;
+  border: 4px double black;
+  margin: 10px auto;
+  text-align: center;
+  background: #d80000;
+  border-radius: 10px;
+}
+.all-bus-sign .bus-sign {
+  border: 4px double black;
+  margin: 10px 7px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+}
+.all-bus-sign .bus-sign .bus-number {
+  display: inline-block;
+  width: 130px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  color: #fff;
+  border: 0.5px solid black;
+  margin: 15px 5px;
+  text-align: center;
+  background: red;
+  border-radius: 10px;
+}
+.all-bus-sign .bus-sign .bus-number h1 {
+  margin: 0;
+}
+.all-bus-sign .bus-sign .bus-message {
+  display: inline-block;
+  width: 324px;
+  float: left;
+  border: 0.5px solid black;
+  margin: 15px 5px;
+  text-align: center;
+  background: #93dc93;
+  border-radius: 10px;
+}
+.all-bus-sign .bus-sign .bus-message .bus-line {
+  height: 50px;
+}
+.all-bus-sign .bus-sign .bus-message .bus-line p {
+  display: inline-block;
+  font-size: 15px;
+}
+.all-bus-sign .bus-sign .bus-message .bus-line span {
+  display: inline-block;
+}
+.all-bus-sign .bus-sign .bus-message .bus-line span.arrows-1 {
+  height: 5px;
+  width: 50px;
+  margin-right: -10px;
+  background: #00F;
+}
+.all-bus-sign .bus-sign .bus-message .bus-line span.arrows-2 {
+  border-left: 10px solid #00F;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  width: 0;
+  height: 0;
+}
+.all-bus-sign .bus-sign .bus-station {
+  border: 0.5px solid black;
+  margin: 15px 5px;
+  text-align: center;
+  background: #93dc93;
+  border-radius: 0;
+  overflow: hidden;
+}
+.all-bus-sign .bus-sign .bus-station span {
+  display: inline-block;
+  float: left;
+  width: 15px;
+  margin: auto 15px;
+}
+.all-bus-sign .bus-sign .bus-station .nowStation {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+.all-bus-sign .bus-company {
+  margin: 20px auto;
+}
